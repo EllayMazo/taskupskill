@@ -48,15 +48,16 @@ html {
     transform: scale(1.1);
     box-shadow: 10px 10px 30px #112A46;
 }
-h1 {
+.title {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #001733;
     line-height: 50px;
     font-size: 33px;
+    text-align: center;
 }
-h1:hover {
+.title:hover {
     transform: scale(1.05);
     box-shadow:  #112A46;
     cursor: pointer;
@@ -91,7 +92,7 @@ a:hover {
     color: #491111;
     text-decoration: underline;
 }
-ul {
+.links {
     font-size: .7rem;
     font-weight: 500;
     object-fit: cover;
@@ -155,6 +156,15 @@ h3:hover {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .links {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1035px) {
+    .bottom-container {
+        flex-direction: column-reverse;
     }
 }
 /* MEDIA */
